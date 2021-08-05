@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <meta name="description" content="Simple Quotes Generator using JavaScript OOP concept and ES6 Module" />
+    <meta name="description" content="Simple Quotes Generator using JavaScript OOP concept and ES6 Module" />
+    <meta name="author" content="Md. Fahim Tayebee" />
+    <meta name="keywords" content="WeatherForecastApp" />
+    <meta name="robots" content="all" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <meta property="og:image" content="assets/img/ss_main.png" />
+
+    <meta property="og:description" content="Simple Quotes Generator using JavaScript OOP concept and ES6 Module" />
+
+    <meta property="og:url" content="http://www.fahimtayebee.com" />
+    <meta property="og:title" content="WeatherForecastApp" />
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon" />
+
+    <link rel="stylesheet" href="assets/lib/bootstrap-4.6.0-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&display=swap" rel="stylesheet">
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <title>Quotes Generator</title>
+</head>
+
+<body id="body-div">
+
+    <section class="main" id="mainCon">
+        <div class="top-bar">
+            <div class="container">
+                <div class="row justify-content-between align-items-center">
+                    <div class="col-10 col-sm-6 col-lg-4 col-md-6 sm-top top-left">
+                        <h1>Quotes Generator</h1>
+                    </div>
+                    <div class="col-10 col-sm-6 col-lg-4 col-md-6 sm-top top-right">
+                        <div class="box">
+                            <form name="search">
+                                <input type="text" name="txt" onmouseout="document.search.txt.value = ''"
+                                    class="input-search input" list="suggetions" id="searchField" placeholder="Search By Tag...">
+                                <datalist id="suggetions">
+                                    <option value="Beuty">Beuty</option>
+                                </datalist>
+                            </form>
+                            <i class="fas fa-search"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="sidebar">
+                            <h1 class="title">Tags</h1>
+                            <div class="tags-list">
+                                <p class="tag" id="">beuty</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-9 col-lg-9 right-content">
+                        <h1 class="title">All Quotes list</h1>
+                        <div class="row" id="quote-list">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Script Area -->
+    <script src="assets/js/jquery-3.5.1.js"></script>
+    <script src="assets/lib/bootstrap-4.6.0-dist/js/bootstrap.min.js"></script>
+    <script src="assets/lib/bootstrap-4.6.0-dist/js/bootstrap.bundle.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="assets/js/jquery.lazy.min.js"></script>
+    <script src="assets/js/script.js" type="module"></script>
+
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        });
+    </script>
+
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+
+</html>
