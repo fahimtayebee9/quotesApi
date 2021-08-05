@@ -52,7 +52,7 @@ export default class Write {
         Element.quoteList.innerHTML = "";
         const aosArr = ["flip-left", "flip-right", "flip-down", "zoom-in-up", "zoom-in-down"];
         quotesList.forEach(quote => {
-            markUp += `<div class="col-md-6" data-aos="${aosArr[Math.floor(Math.random() * aosArr.length)]}" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
+            markUp += `<div class="col-10 col-sm-10 col-md-10 col-lg-6 sm-dvc" data-aos="${aosArr[Math.floor(Math.random() * aosArr.length)]}" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
                             <div class="quote-box">
                                 <h1 class="quote" id="${count}">${quote.text}</h1>
                                 <p class="author">
